@@ -1,0 +1,26 @@
+/pr@region - Power Rankings
+example: /pr@brazil
+
+/earnings - Earnings Leaderboards
+/hype - Rype Leaderboards
+
+/Player - Tudo sobre o player
+/Live - acompanhar campeonato
+/StopLive - parar de acompanhar campeonato
+
+/help - see commands
+
+-----
+Regions:
+@asia
+@brazil
+@eu
+@me
+@nae
+@naw
+@oce
+
+Plataforms:
+@pc
+@console
+@mobile

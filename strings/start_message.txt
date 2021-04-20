@@ -1,0 +1,2 @@
+Olá! Eu sou o PeixotoBot, tenho vários comandos legais.
+Responda /help para ver meus comandos.
