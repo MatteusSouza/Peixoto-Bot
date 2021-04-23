@@ -12,6 +12,7 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
+token = config.api_key
 
 def read_file(file: str):
     file = io.open(file, 'r', encoding="utf8")
@@ -35,7 +36,6 @@ def echo(update: Update, _: CallbackContext) -> None:
 
 
 def main() -> None:
-    token = config.api_key
     updater = Updater(token)
 
     dispatcher = updater.dispatcher
