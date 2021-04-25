@@ -12,7 +12,8 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-token = config.api_key
+token = config.BOT_TOKEN
+
 
 def read_file(file: str):
     file = io.open(file, 'r', encoding="utf8")
