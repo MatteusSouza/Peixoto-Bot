@@ -1,13 +1,13 @@
 import requests
-import config
+from config import TRN_KEY
 
 
-def validationRegion(region: str):
+def validateRegion(region: str):
     regions = ["NAE", "NAW", "EU", "OCE", "BR", "ASIA", "ME"]
     return region.upper() in regions
 
 
-def validationPlatform(platform):
+def validatePlatform(platform):
     platforms = ["PC", "CONSOLE", "MOBILE"]
     return platform.upper() in platforms
 
@@ -15,7 +15,7 @@ def validationPlatform(platform):
 def requisition(username, platform, region):
     url = 'https://api.fortnitetracker.com/v1/powerrankings/' + platform + '/' + region + '/' + username
     headers = {
-        'TRN-Api-Key': config.TRN_KEY
+        'TRN-Api-Key': TRN_KEY
     }
 
     status_code = None
@@ -40,7 +40,7 @@ def getPower_ranking(username, platform, region):
     none_status_code = None
     none_response_info = None
 
-    validation = {'platform': validationPlatform(platform), 'region': validationRegion(region)}
+    validation = {'platform': validatePlatform(platform), 'region': validateRegion(region)}
 
     if (validation['platform'] and validation['region']) is True:
         response = requisition(username, platform, region)

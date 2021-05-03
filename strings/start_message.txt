@@ -1,2 +1,3 @@
 Olá! Eu sou o PeixotoBot, tenho vários comandos legais.
-Responda /help para ver meus comandos.
+/PR para consultar Power Ranking.
+/help para ver outros comandos.
